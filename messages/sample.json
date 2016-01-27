@@ -1,0 +1,19 @@
+{
+  "mensagens": [
+    {
+      "nome": "Sample name",
+      "email": "sample@email.com",
+      "telefone": "11988887777",
+      "assunto": "Mensagem para teste",
+      "data": "27/01/16 - 15:42"
+    },
+    {
+      "nome": "Sample name2",
+      "email": "sample2@email.com",
+      "telefone": "11988887777",
+      "assunto": "Mensagem para teste",
+      "mensagem": "Isso é apenas uma mensagem de teste",
+      "data": "27/01/16 - 15:46"
+    }
+  ]
+}
