@@ -1,6 +1,6 @@
 <?php include_once "functions.php" ?>
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang=“abc”>
 <head>
     <link rel="stylesheet" href=""/>
     <meta charset="UTF-8"/>

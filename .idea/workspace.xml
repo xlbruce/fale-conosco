@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2f3090be-6f70-4676-bd14-6c5396e58259" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mostra-mensagem.php" afterPath="$PROJECT_DIR$/mostra-mensagem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mensagens.php" afterPath="$PROJECT_DIR$/mensagens.php" />
     </list>
     <ignored path="fale-conosco.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,12 +28,12 @@
       <file leaf-file-name="mensagens.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mensagens.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78446907">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.04754358">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
               <folding>
-                <marker date="1453990110000" expanded="true" signature="779:800" placeholder="..." />
-                <marker date="1453990110000" expanded="true" signature="779:964" placeholder="..." />
-                <marker date="1453990110000" expanded="true" signature="779:965" placeholder="..." />
+                <marker date="1453992129000" expanded="true" signature="777:798" placeholder="..." />
+                <marker date="1453992129000" expanded="true" signature="777:962" placeholder="..." />
+                <marker date="1453992129000" expanded="true" signature="777:963" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -64,8 +64,8 @@
         <option value="$PROJECT_DIR$/envia-mensagem.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/messages/contatos.json" />
-        <option value="$PROJECT_DIR$/mensagens.php" />
         <option value="$PROJECT_DIR$/mostra-mensagem.php" />
+        <option value="$PROJECT_DIR$/mensagens.php" />
       </list>
     </option>
   </component>
@@ -166,6 +166,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2f3090be-6f70-4676-bd14-6c5396e58259" name="Default" comment="" />
@@ -256,12 +259,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mensagens.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78446907">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.04754358">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding>
-            <marker date="1453990110000" expanded="true" signature="779:800" placeholder="..." />
-            <marker date="1453990110000" expanded="true" signature="779:964" placeholder="..." />
-            <marker date="1453990110000" expanded="true" signature="779:965" placeholder="..." />
+            <marker date="1453992129000" expanded="true" signature="777:798" placeholder="..." />
+            <marker date="1453992129000" expanded="true" signature="777:962" placeholder="..." />
+            <marker date="1453992129000" expanded="true" signature="777:963" placeholder="..." />
           </folding>
         </state>
       </provider>
