@@ -13,7 +13,7 @@ $obj = [
     "telefone" => $tel,
     "assunto" => $assunto,
     "mensagem" => $mensagem,
-    "data" => date("d/m/Y - H:m")
+    "data" => date("d/m/Y - H:i")
 ];
 
 saveMessage($obj);
