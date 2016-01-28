@@ -8,13 +8,13 @@
 <body>
 <section>
     <h1>Fale-conosco</h1>
-    <form method="post">
+    <form method="post" action="envia-mensagem.php">
         <p>Nome <input type="text" name="nome" id="nome" maxlength="30" required/></p>
         <p>Email <input type="email" name="email" id="email" maxlength="40" required/></p>
         <p>Telefone <input type="tel" name="tel" id="tel" maxlength="11" required/></p>
         <p>Assunto <input type="text" name="assunto" id="assunto" maxlength="50" required/></p>
-        <p>Mensagem <textarea cols="30" rows="5"></textarea></p>
-        <p><input type="submit" value="Enviar"/></p>
+        <p>Mensagem <textarea cols="30" rows="5" name="mensagem"></textarea></p>
+        <p><input type="button" onclick="window.open('index.html', '_self')" value="Voltar"/> <input type="submit" value="Enviar"/> </p>
     </form>
 </section>
 </body>
