@@ -1,6 +1,8 @@
 <?php
 $MENSAGENS = "messages/contatos.json";
 
+date_default_timezone_set("America/Sao_Paulo");
+
 function readFileContent($fileName) {
     $file = fopen($fileName, "r");
     $content = fread($file, filesize($fileName));

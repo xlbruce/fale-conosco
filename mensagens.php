@@ -1,57 +1,61 @@
-<?php include_once "functions.php" ?>
+<!--TODO Refatorar o arquivo-->
+<?php
+include_once "functions.php";
+
+$semMensagensStr = "<h1>Não há mensagens</h1>";
+$mensagens = true;
+$tabela = "<table>
+            <tr>
+                <th>Data e hora</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Assunto</th>
+                <th>Mensagem</th>
+            </tr>
+            {{dados}}
+            </table>";
+
+$msgs = getMessagesArray();
+$dados = "";
+
+if (count($msgs)) { //Só gera a tabela se houver mensagens
+    for ($i = 0; $i < count($msgs); $i++) {
+        $data = $msgs[$i]['data'];
+        $nome = $msgs[$i]['nome'];
+        $mail = $msgs[$i]['email'];
+        $assunto = $msgs[$i]['assunto'];
+        $link = "<a href='mostra-mensagem.php?data=$data&email=$mail'>Ver Mensagem</a>";
+        $dados .= "<tr>
+    <td>$data</td>
+    <td>$nome</td>
+    <td>$mail</td>
+    <td>$assunto</td>
+    <td>$link</td>
+</tr>";
+
+    }
+    $tabela = str_replace("{{dados}}", $dados, $tabela);
+} else {
+    $mensagens = false;
+}
+
+?>
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang=“pt-BR”>
 <head>
-    <link rel="stylesheet" href=""/>
+    <link rel="stylesheet" href="css/style.css"/>
     <meta charset="UTF-8"/>
     <title>Mensagens</title>
 </head>
 <body>
-<section>
+<section id="mensagens">
     <?php
-    $msgs = getMessagesArray();
-    if (count($msgs)) {
-    //Se houver mensagens, exibe a tabela normalmente
+    //Aqui é exibida a tabela com os dados, ou uma mensagem informando que não há mensagens
+    echo ($mensagens) ? $tabela : $semMensagensStr
     ?>
-    <table border="1">
-        <tr>
-            <th>Data e hora</th>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Assunto</th>
-            <th>Mensagem</th>
-        </tr>
-        <?php
-        for ($i = 0; $i < count($msgs); $i++) {
-            $mail = $msgs[$i]['email'];
-            $data = $msgs[$i]['data'];
-            $link = "<a href='mostra-mensagem.php?data=$data&email=$mail'>Ver Mensagem</a>";
-            printf("<tr>
-                    <td>%s</td>
-                    <td>%s</td>
-                    <td>%s</td>
-                    <td>%s</td>
-                    <td>%s</td>
-                    </tr>",
-                            $msgs[$i]['data'],
-                            $msgs[$i]['nome'],
-                            $msgs[$i]['email'],
-                            $msgs[$i]['assunto'],
-                            $link);
-
-        }
-        ?>
-        <?php
-        } //end if
-        else {
-        ?>
-
-        <h1>Não há nenhuma mensagem</h1>
-        <?php
-        } //end else
-        ?>
-    </table>
+    <input type="button" onclick="window.open('index.html', '_self')" value="Voltar">
 </section>
-<a href="index.html">Voltar</a>
+
 </body>
 </html>
