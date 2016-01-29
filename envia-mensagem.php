@@ -1,5 +1,5 @@
 <?php
-include "functions.php";
+include_once "functions.php";
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
@@ -17,5 +17,6 @@ $obj = [
 ];
 
 saveMessage($obj);
-header('Location: contato.html');
-
+echo "<script>alert('Mensagem enviada com sucesso!');
+            window.open('contato.html', '_self');
+            </script>";
