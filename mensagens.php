@@ -47,6 +47,13 @@ if (count($msgs)) { //Só gera a tabela se houver mensagens
     <link rel="stylesheet" href="css/style.css"/>
     <meta charset="UTF-8"/>
     <title>Mensagens</title>
+    <style>
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    </style>
 </head>
 <body>
 <section id="mensagens">
